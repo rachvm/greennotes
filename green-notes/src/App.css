@@ -25,6 +25,8 @@
   font-size: calc(10px + 2vmin);
   color: var(--font-color);
   font-family: var(--font-style);
+  height: 20%;
+  width: 100%;
 }
 .main-card{
   display: flex;
@@ -35,14 +37,34 @@
   text-align: center;
   color: var(--background-color);
   background-color: var(--font-color);
+  padding: 15px;
+  border-radius: 5px;
 }
-
+.topic-section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 95%; 
+  text-align: left;
+}
+.category{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70%; 
+  text-align: center;
+}
+.best-practice-section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 95%; 
+  text-align: left;
+}
 .left-card{
-  border:5px;
-  border-style: solid;
-}
-
-.right-card{
   border:5px;
   border-style: solid;
 }
@@ -50,6 +72,7 @@
 .footer{
   height: 10%;
 }
+
 p{
   font-size: 2vmin;
 }

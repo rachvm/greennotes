@@ -6,7 +6,7 @@ import data from "./data/data";
 import { useState, useEffect } from "react";
 
 function App() {
-  const [randomTip, setRandomTip] = useState(null);
+  const [randomTip, setRandomTip] = useState(data[0]);
 
   useEffect(() => {
     cardRandomiser(data);
@@ -21,7 +21,7 @@ function App() {
   console.log(randomTip);
   return (
     <div className="App">
-      <Header />
+      <Header topic_category={randomTip.topic_category} />
       {randomTip && <TipCard randomTip={randomTip} />}
       <Footer />
     </div>

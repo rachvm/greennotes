@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <TipCard />
+      {randomTip && <TipCard randomTip={randomTip} />}
       <Footer />
     </div>
   );

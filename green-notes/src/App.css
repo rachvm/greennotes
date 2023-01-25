@@ -4,6 +4,18 @@
   --font-style: Arial, Helvetica, sans-serif
 }
 
+.App{
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--font-color);
+  font-family: var(--font-style);
+}
+
 .App-header {
   background-color: var(--background-color);
   display: flex;
@@ -16,9 +28,13 @@
 }
 .main-card{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 70%;
+  text-align: center;
+  color: var(--background-color);
+  background-color: var(--font-color);
 }
 
 .left-card{
@@ -29,4 +45,11 @@
 .right-card{
   border:5px;
   border-style: solid;
+}
+
+.footer{
+  height: 10%;
+}
+p{
+  font-size: 2vmin;
 }

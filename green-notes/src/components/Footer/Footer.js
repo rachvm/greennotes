@@ -1,10 +1,14 @@
-import logo from "../../images/istockphoto-1359659563-612x612.jpg";
+import logo from "../../images/icons8-enviroment-64.png";
 
 export default function Footer() {
   return (
+    // <div className="container">
+    //   <div className="block"></div>
     <div className={"footer"}>
-      <p>Placeholder for badge</p>
+      <p>Placeholder for Carbon Footprint badge</p>
+      <img src={logo} alt="green-notes-logo" />
       {/* <img classname="logo" src={logo} alt="green earth logo"></img> */}
     </div>
+    // </div>
   );
 }
